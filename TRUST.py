@@ -185,7 +185,7 @@ def show_recent_logs(message):
 @bot.message_handler(commands=['id'])
 def show_user_id(message):
     user_id = str(message.chat.id)
-    response = f"🤖Your ID: {user_id}"
+    response = f"🤖Your ID: <code>{user_id}</code>"
     bot.reply_to(message, response)
 
 def start_attack_reply(message, TRUST_IP, TRUST_port, time):
@@ -259,6 +259,7 @@ def show_command_logs(message):
 def show_help(message):
     help_text ='''🤖 Available commands:
 🚬 /bgmi : 𝑺𝑬𝑹𝑽𝑬𝑹 𝑫𝑶𝑾𝑵 𝑶𝑭 𝑩𝑮𝑴𝑰 
+🚬 /id   : ...---- YOUr TG.. ID... ✨
 🚬 /rules : ........  𝑪𝑯𝑬𝑪𝑲 𝑵𝑶𝑾   ..!!.
 🚬 /mylogs : 𝑹𝑬𝑪𝑬𝑵𝑻 𝑨𝑨𝑻𝑪𝑲 𝑪𝑯𝑪𝑬𝑲.
 🚬 /prize :         𝑷𝑹𝑰𝑪𝑬 𝑳𝑰𝑺𝑻 🔰
