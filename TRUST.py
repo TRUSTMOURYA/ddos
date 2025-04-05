@@ -88,7 +88,14 @@ def add_user(message):
         else:
             response = "Please specify a user ID to add 😒."
     else:
-        response = "ᵀᵁᴹˢᴱ ᴺᴬ ᴴᴼ ᴾᴬʸᴱᴳᴬ🤣"
+        response = """
+अबे सुन,
+तेरी शक्ल पे हँसी आती है,
+तेरी सकल मेरे छोटू पर जाती है।
+
+JAB TUMHE PTA HAI BOT TERE PAPA KA HAI 
+FIR BI GAND ME UNGI KR RH HAI
+ """
 
     bot.reply_to(message, response)
 
@@ -129,11 +136,53 @@ def clear_logs_command(message):
                     response = "Logs are already cleared. No data found ."
                 else:
                     file.truncate(0)
-                    response = "Logs Cleared Successfully ✅"
+                    response = "Logs Cleared Successfully "
         except FileNotFoundError:
             response = "Logs are already cleared ."
     else:
-        response = "😎🇲 🇪  🇰 🇷  🇩 🇺 🇳 🇬 🇦  🇹 🇺 🇲  🇧 🇸  🇰 🇭 🇪 🇱 😎"
+        response = """
+        
+HAR JGHA KYON CHUDA RH HAI ☠️
+BHIKARI KHIN KE 😡😡
+
+ चूत के पसीने में तले हुए भजिए -
+ चूत के पसीने में तला हुआ नाश्ता
+ चूत के धक्के-चूत  ढक्कन
+ 
+मादरचोद- मादरचोद
+सड़ी हुई बिल्ली से पैदा हुआ
+ बहन चोद- बहन चोद
+ बेटी चोद-बेटी चोद
+ भाधवा- दलाल
+ चोदू- साला
+ चुटिया- साला, कमीने
+ गांड- गधा
+ गांडू-गधे
+ गढ़ा, बाकलैंड- बेवकूफ
+ लौड़ा, लंड- लिंग, लौड़ा, लंड
+ हिजड़ा- समलैंगिक, ट्रांससेक्सुअल
+ रंडी- पतुरिया
+
+👽 ENGLISH WALE CHOODE
+
+Bhajiya fried in pussy sweat -
+Breakfast fried in pussy sweat
+
+Pussy thrusts-pussy cover
+Madarchod- mother fucker
+Born from a rotten pussy
+Behan chod- sister fucker
+Beti chod- daughter fucker
+Bhadhwa- pimp
+Choddu- brother in law
+Chutiya- brother in law, bastard
+Gand- donkey
+Gandu- asshole
+Gadh, Baakland- idiot
+Lund, cock- penis, dick, cock
+Hijra- homosexual, transsexual
+Randi- whore
+ """
     bot.reply_to(message, response)
 
  
@@ -178,7 +227,7 @@ def show_recent_logs(message):
             response = "No data found "
             bot.reply_to(message, response)
     else:
-        response = "ᵀᵁᴹˢᴱ ᴺᴬ ᴴᴼ ᴾᴬʸᴱᴳᴬ🤣"
+        response = "तू गा-ली खाने लायक भी नहीं,तू तो सिर्फ थूकने के लायक है।"
         bot.reply_to(message, response)
 
 
@@ -270,7 +319,7 @@ def show_command_logs(message):
         except FileNotFoundError:
             response = "No command logs found."
     else:
-        response = "ᵀᵁᴹˢᴱ ᴺᴬ ᴴᴼ ᴾᴬʸᴱᴳᴬ🤣"
+        response = "तू वो कचरा है,जिसे उठाने का मन भी नहीं करता।🤣"
 
     bot.reply_to(message, response)
 
